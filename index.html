@@ -1,13 +1,120 @@
+<!--FEWD 12/12 FINAL PROJECT - Portfolio Mockup-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src ="script.js"></script>
+    <title>Home | Kareem Edmonds</title>
 </head>
 <body>
-    <p>I am a blank.</p>
-    <p>I am another blank.</p>
+    <header>
+        <div class="ke-logo"></div>
+        <div class="hamburger-menu"></div>
+        <div class="nav-menu">
+            <ul class="desktop-menu">
+               <a href="">Work</a>
+               <a href="">About</a>
+               <a href="">Experience</a>
+               <a href="">Toolkit</a> 
+            </ul>
+        </div>
+        <div class="mobile-menu">
+            <ul id="mobile-menu-items">
+                <li><a href="">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Toolkit</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <section class="hero">
+        <div class="hero-logo"></div>
+        <div class="hero-title">
+            <h1>Kareem Edmonds</h1>
+        </div>
+        <div class="hero-subtitle">
+            <a href="#">UX Design </a>
+            <div class = "vertline"> | </div>
+            <a href="#"> Graphic Design  </a>
+            <div class = "vertline">  </div>
+            <a href="#"> Multimedia  </a>
+            <div class = "vertline"> | </div>
+            <a href="#"> Animation </a>
+        </div>
+        <div class="down-arrow"></div>
+        <div id="about">About</div>
+    </section>
+
+<!--UX DESIGN SECTION-->
+    <section>
+        <div class="section-heading">
+            <h1>UX Design</h1>
+        </div>
+        <div class="grid-container">
+            <!--HBO MAX UI DESIGN-->
+            <div class="grid-item hbo-ui" >
+                <img class="hbo-max-logo-ui" src="./images/HBO_Max-Logo.png" alt="HBO_Max-Logo">
+            </div>
+
+            <!--BORING ATLAS UI DESIGN-->
+            <div class = "grid-item boring-ui">
+                <img class="boring-atlas-logo" src="./images/Boring Atlas Logo.png" alt="boring-atlas-logo">
+            </div>
+            <!--GOLDEN POINT UI DESIGN-->
+            <div class = "grid-item golden-ui">
+                <img class = "golden-point-logo" src="./images/golden-point-logo.png" alt="golden-point-logo">
+            </div>
+        </div>
+    </section>
+
+<!--GRAPHIC DESIGN SECTION-->
+<section>
+    <div class="section-heading">
+        <h1>Graphic Design</h1>
+    </div>
+    <div class="grid-container">
+
+        <div class="grid-item grit-city">
+            <img src="./images/grit city logo.png" alt="grit-city-logo" class="grit-city-logo">
+        </div>
+
+        <div class = "grid-item creatives">
+            <img src="./images/3-5 logo.png" alt="3-5 logo" class="creatives-logo">
+        </div>
+
+        <div class = "grid-item additional-work">
+            <h4>Additional Works</h4>
+        </div>
+    </div>
+</section>
+
+<!--MULTIMEDIA SECTION-->
+<section>
+    <div class="section-heading">
+        <h1>Multimedia</h1>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item dark-knight"></div>
+        <div class = "grid-item duck-hunt"></div>
+        <div class = "grid-item hbo-max-collection"></div>
+    </div>
+</section>
+
+<!--ANIMATIION SECTION-->
+<section>
+    <div class="section-heading">
+        <h1>Animation</h1>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class = "grid-item"></div>
+        <div class = "grid-item"></div>
+    </div>
+</section>
 </body>
 </html>

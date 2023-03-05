@@ -1,0 +1,914 @@
+
+body {
+    background-color: #002233;
+
+}
+
+a {
+    color: white;
+}
+
+
+div { 
+    border: 1px solid #febe05;
+}
+/* OPENING HERO SECTION */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ke-logo {
+    flex-grow: 0;
+    background-image: url('images/ke-logo-white.png');
+    width: 75px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-menu a {
+    justify-content: center;
+    padding: 30px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-logo {
+    margin: 3% 0%;
+    width:200px;
+    height: 200px;
+    background-image: url('images/ke-logo-white.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin: 10px;
+    color: white;
+}
+
+.hero-subtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vertline {
+    font-size: 10px;
+   background-color: azure;
+    height: 50px;
+    width: 2px;
+}
+
+.hero a{
+    border-right: 50px white;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.down-arrow {
+    height: 75px;
+    width: 75px;
+    margin: 60px;
+    background-image: url('./images/down-arrow.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hbo-ui {
+    background-image: url('./images/backgrounds/HBO-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.boring-ui {
+    background-image: url(./images/backgrounds/Atlas-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.golden-ui {
+    background-image: url('./images/backgrounds/GP-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grit-city{
+    background-image: url(./images/backgrounds/Grit-City.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creatives{
+    background-image: url('images/backgrounds/3.5-Background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.additional-work {
+    background-image: url(./images/backgrounds/default-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark-knight {
+    background-image: url('./images/backgrounds/Drak-Knight.gif');
+    background-repeat: no-repeat;
+    background-position-y: -25px;
+    background-position-x: -5px;
+}
+
+.duck-hunt {
+    background-image: url(./images/backgrounds/duck-hunt.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -15px;
+}
+
+.hbo-max-collection {
+    background-image: url('./images/backgrounds/Tyrone-3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -25px;
+}
+
+/* === MEDIA QUERIES  ====
+FULL HD - 1250px and Up*/
+
+
+@media (min-width: 1250px) { 
+/* HERO SECTION */   
+    header {
+        padding: 35px;
+    }
+
+    .ke-logo {
+    width: 100px;
+    height: 85px ;
+    }
+
+    .nav-menu {
+        flex-basis: 65%;
+        font-size: 24px;
+    }
+
+    .nav-menu a {
+        padding: 35px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hero-logo {
+        width:325px;
+        height: 325px;
+    }
+
+    .hero h1 {
+        font-size: 84px;
+    }
+
+    .hero a {
+        font-size: 28px;
+    }
+    
+    .down-arrow {
+        height: 75px;
+        width: 75px;
+        margin: 60px;
+    }
+
+    /* - UX GRIDS - */
+    .hbo-max-logo-ui{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 250px;
+        transform: translate(-50%, -50%);
+        padding: 25px;
+    }
+
+    .boring-atlas-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 200px;
+        transform: translate(-50%, -50%);
+        padding:15px;
+    }
+    
+    .golden-point-logo {
+        position: relative;
+        width: 200px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* - GRAPHIC DESIGN GRIDS - */
+
+    .grit-city-logo {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+    .creatives-logo {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .grid-item h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+    /* - MULTIMEDIA GRIDS - */
+      
+    /* ANIMATION GRIDS */
+
+    .section-heading {
+        font-size: 24px;
+        margin-top: 50px;
+        padding: 15px 10%;
+    }
+
+    .grid-container {
+        display: grid;
+        margin: 0% 10%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        place-items: center;
+    }
+
+    .grid-item {
+        background-color: blue;
+        width: 200px;
+        height: 25px;
+        margin: 10%;
+        padding: 15%;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/* === MEDIA QUERY - Between 987px - 1249px */
+@media (min-width: 987px) and (max-width: 1249px) {
+  /* HERO SECTION */
+    header {
+        padding: 25px;
+    }
+
+    .ke-logo {
+    width: 90px;
+    height: 75px ;
+    }
+
+    .nav-menu {
+        flex-basis: 60%;
+        font-size: 20px;
+    }
+
+    .nav-menu a {
+        padding: 30px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hero-logo {
+        width:275px;
+        height:275px;
+
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .hero a {
+        font-size: 24px;
+    }    
+
+    .down-arrow {
+        margin: 45px;
+        width: 65px;
+        height: 65px;
+    }
+    /* -- UX GRIDS -- */
+
+    .hbo-max-logo-ui{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 250px;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+    }
+
+    .boring-atlas-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 175px;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+
+    .golden-point-logo {
+        position: relative;
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* -- GRAPHIC DESIGN GRIDS -- */
+
+    .grit-city-logo {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .creatives-logo {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .grid-item h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+    /* MULTIMEDIA GRIDS */
+    /* ANIMATION GRIDS */
+
+
+    .section-heading {
+        font-size: 24px;
+        margin-top: 50px;
+        padding: 15px 5%;
+    }   
+
+    .grid-container {
+        display: grid;
+        margin: 0% 5%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        place-items: center;
+    }
+
+    .grid-item {
+        background-color: green;
+        width: 200px;
+        height: 25px;
+        margin: 5%;
+        padding: 15%;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 986px) and (min-width: 768px) {
+
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .ke-logo {
+        display: none;
+    }
+
+    .nav-menu {
+        font-size: 22px;
+        flex-basis: 75vh;
+        justify-content: center;
+    }
+    
+    .nav-menu ul {
+        display: flex;
+        flex-basis: 60%;
+        margin: 0%;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+    
+    .hero-logo {
+        margin: 20px;
+        width:200px;
+        height:200px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero a {
+        font-size: 22px;
+    }   
+
+    .down-arrow {
+        margin: 35px;
+        width: 65px;
+        height: 65px;
+    }
+
+    /* --- UX GRIDS --- */
+
+    .hbo-max-logo-ui{
+        position: relative;
+        left: -7.5%;
+        bottom: 25%;
+        width: 225px;
+        padding: 5px;
+    }
+
+    .boring-atlas-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 175px;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+
+    .golden-point-logo {
+        position: relative;
+        left: 45%;
+        top: 50%;
+        width: 75%;
+        transform: translate(-60%, -50%);
+    }
+
+    /* --- GRAPHIC DESIGN GRIDS --- */
+
+    .grit-city-logo {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .creatives-logo {
+        position: relative;
+        width: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .grid-item h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+    /* MULTIMEDIA GRIDS */
+    /* ANIMATION GRIDS */
+
+    .section-heading {
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 5px 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        margin: 0% 10%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        place-items: center;
+        grid-gap: 10px;
+    }
+
+    .grid-item {
+        background-color: yellow;
+        
+        width: 200px;
+        height: 25px;
+        margin: 5%;
+        padding: 15%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+}
+
+@media (max-width: 767px) and (min-width: 600px) {
+    .ke-logo {
+        display: none;
+    }
+    .nav-menu {
+        flex-basis: 85vh;
+        margin: 25px;
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        padding: auto;
+        font-size: 18px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hero-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero a {
+        font-size: 18px;
+    }
+
+    .down-arrow {
+        margin: 25px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .section-heading {
+        font-size: 18px;
+        margin-top: 50px;
+        padding: 5px 5%;
+    }
+
+    /* ---- UX GRIDS -----*/
+
+    .hbo-max-logo-ui{
+        position: relative;
+        left: -10%;
+        bottom: 20%;
+        width: 225px;
+        padding: 5px;
+    }
+
+    .boring-atlas-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 175px;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+
+    .golden-point-logo {
+        position: relative;
+        height: 125px;
+        width: 85%;
+        left: 41%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: contain;
+    }
+
+    /* ---- GRAPHIC DESIGN GRIDS ---- */
+
+    .grit-city-logo {
+        position: relative;
+        width: 225px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .creatives-logo {
+        position: relative;
+        width: 225px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .grid-item h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    /* MULTIMEDIA GRIDS */
+    /* ANIMATION GRIDS */
+
+    .grid-container {
+        display: grid;
+        margin: 0% 2.5%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        place-items: center;
+        grid-gap: 10px;
+    }
+
+    .grid-item {
+        background-color: magenta;
+        grid-column: span(2);
+        width: 200px;
+        height: 25px;
+        margin: 2.5%;
+        padding: 15%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .desktop-menu  {
+        display: none;
+    }
+    
+    .ke-logo {
+        display: none;
+    }
+
+    .nav-menu {
+        margin: 10%;
+    }
+
+    .hamburger-menu { /* Change to smaller icon */
+        display: flex;
+        margin: 25px;
+        background-image: url('./images/hamburger_menu.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position:fixed;
+        height: 60px;
+        width: 60px;
+        left: 60%;
+        top: 20px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 65%;
+        transform: translateX(-150%);
+        padding: 50px;
+        margin-left: -40px;
+        text-align: left;
+        transition: transform 0.5s ease-in-out; 
+        background-color: #febe05;   
+    }
+
+    .mobile-menu li {
+        margin-top: 10vh;
+        font-weight: bold;
+        font-size: 1.5rem;
+        list-style: none;
+        z-index: 3;
+        color: #002233;
+        
+    }
+    
+
+ /*   .nav-menu input [type = "checkbox"]:checked ~ .mobile-menu {
+        transform: translateX(-50);
+    }
+*/
+
+    .hero-logo {
+        margin: 60px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero a {
+        font-size: 18px;
+    }
+
+    .vertline {
+        font-size: 10px;
+       background-color: white;
+        height: 30px;
+        width: 1px;
+    }
+
+    .transformation {
+        transform: translateX(-25%);
+        z-index: 2;  
+    }
+
+    /* --5-- UX GRIDS --5-- */
+    .hbo-max-logo-ui{
+        position: relative;
+        left: -7.5%;
+        bottom: 80%;
+        width: 175px;
+    }
+
+    .boring-atlas-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+    }
+
+    .golden-point-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        height: 125px;
+        width: 95%;
+        transform: translate(-50%, -50%);
+    }
+    /* --5-- GRAPHIC DESIGN GRIDS --5-- */
+
+    .grit-city-logo {
+        position: relative;
+        width: 200px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .creatives-logo {
+        position: relative;
+        width: 225px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .grid-item h4 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+    /* MULTIMEDIA GRIDS */
+    /* ANIMATION GRIDS */
+
+    .section-heading {
+        font-size: 18px;
+        margin-top: 50px;
+        padding: 5px 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        margin: 0% 2.5%;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: 2fr;
+        place-items: center;
+        grid-gap: 10px;
+    }
+
+    .grid-item {
+        background-color: cyan;
+        width: 150px;
+        height: 10px;
+        margin: 2.5%;
+        padding: 12.5%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 465px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        flex-direction: column;
+        margin: 5vh;
+    }
+
+    .hero a {
+        font-size: 16px;
+        margin: 2.5px;
+    }
+
+    .vertline {
+        transform: rotate(90deg);
+    }
+
+    .down-arrow {
+        display: none;
+    }
+
+    /* ---6--- UX GRID ITEMS  ---6---*/
+    .boring-atlas-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 125px;
+        transform: translate(-50%, -50%);
+        padding: 12.5px;
+    }
+
+    .golden-point-logo {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        height: 100px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* --6--- GRAPHIC DESIGN GRIDS ---6-- */
+    /* MULTIMEDIA GRIDS */
+    /* ANIMATION GRIDS */
+
+    .section-heading {
+        font-size: 14px;
+        margin-top: 50px;
+        padding: 1.5px 5%;
+    }
+
+    .grid-container {
+        display: grid;
+        margin: 0% 1.5%;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: 2fr;
+        justify-items: center;
+        align-self: center;
+        grid-gap: 10px;
+    }
+
+    .grid-item {
+        background-color: orange;
+        width: 150px;
+        height: 10px;
+        margin: 2.5%;
+        padding: 12.5%;
+        text-align: center;
+        font-size: 30px;
+    }
+}
