@@ -299,6 +299,7 @@ FULL HD - 1250px and Up*/
         padding: 15%;
         text-align: center;
         font-size: 30px;
+        text-decoration: none;
         
     }
     
@@ -2470,6 +2471,7 @@ animation: animateRight 3s ease-in-out infinite;
         padding: 15%;
         text-align: center;
         font-size: 24px;
+        text-decoration: none;
     }
     
 }
@@ -2612,6 +2614,7 @@ animation: animateRight 3s ease-in-out infinite;
         padding: 15%;
         text-align: center;
         font-size: 24px;
+        text-decoration: none;
     }
 
 
@@ -2746,6 +2749,7 @@ animation: animateRight 3s ease-in-out infinite;
         padding: 15%;
         text-align: center;
         font-size: 24px;
+        text-decoration: none;
     }
 
 }
@@ -2924,6 +2928,7 @@ animation: animateRight 3s ease-in-out infinite;
         padding: 12.5%;
         text-align: center;
         font-size: 22px;
+        text-decoration: none;
     }
 
 }
@@ -3009,9 +3014,17 @@ animation: animateRight 3s ease-in-out infinite;
         padding: 12.5%;
         text-align: center;
         font-size: 20px;
+        text-decoration: none;
     }
 }
 
 .fade-in {
     /* Insert Animation Here */
+    transition: all .5s ease-in-out;
+    position: absolute;
+    z-index: 5;
+}
+
+html {
+  scroll-behavior: smooth;
 }
